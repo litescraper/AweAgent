@@ -1,5 +1,14 @@
 # Web Tools
 
+### Native Google search backend
+
+Set `SEARCH_BACKEND=litescrape` and `LITESCRAPE_API_KEY` to select the new
+backend. Optionally set `LITESCRAPE_BASE_URL` to a base URL without a route
+suffix. The default is `https://api.litescrape.com`.
+SerpAPI remains the default. Only the `google` engine and `num` values
+1-10 are supported. Non-negative offsets use the native `start` parameter.
+Header authentication and the existing result fields and filtering are retained.
+
 Web search, fetch + summarize, and raw fetch — with pluggable backends.
 
 ## Directory Structure

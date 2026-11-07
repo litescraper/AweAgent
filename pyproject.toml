@@ -67,6 +67,7 @@ browsecomp = "aweagent.tasks.browsecomp.evaluator:BrowseCompEvaluator"
 
 [project.entry-points."aweagent.search_backend"]
 serpapi = "aweagent.core.tool.search.backends.search.serpapi:SerpAPIBackend"
+litescrape = "aweagent.core.tool.search.backends.search.litescrape:LitescrapeBackend"
 
 [project.entry-points."aweagent.reader_backend"]
 jina = "aweagent.core.tool.search.backends.reader.jina:JinaReaderBackend"
