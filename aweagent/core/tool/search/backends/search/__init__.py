@@ -32,6 +32,13 @@ try:
 except ImportError:
     pass  # aiohttp not installed — skip
 
+try:
+    from aweagent.core.tool.search.backends.search.serper import SerperBackend
+
+    search_backend_registry.register("serper", SerperBackend)
+except ImportError:
+    pass  # aiohttp not installed — skip
+
 
 def get_search_backend(name: str | None = None, **kwargs: Any) -> Any:
     """Get a search backend instance by name.

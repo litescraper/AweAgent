@@ -1,5 +1,16 @@
 # Web Tools
 
+### Serper-compatible backend
+
+Set `SEARCH_BACKEND=serper` and `SERPER_API_KEY` to select the new
+backend. Optionally set `SERPER_BASE_URL` to a base URL without a route
+suffix. The default is `https://google.serper.dev`.
+SerpAPI remains the default. Only the `google` engine and `num` values
+1-10 are supported. Offsets must be multiples of `num` and are converted to Serper pages.
+Header authentication and the existing result fields and filtering are retained.
+
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others)
+
 Web search, fetch + summarize, and raw fetch — with pluggable backends.
 
 ## Directory Structure
